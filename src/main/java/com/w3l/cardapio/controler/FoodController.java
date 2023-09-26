@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("food")
+@RequestMapping("/food")
 public class FoodController {
 
     @Autowired
     FoodRepository foodRepository;
 
-    @PostMapping("/post")
+    @CrossOrigin(origins = "*", allowedHeaders = "*") // permitir conexões de todas origens e de todos headers que vier do cliente
+    @PostMapping()
     public void saveFood(@RequestBody FoodRequestDTO data){
 
         Food foodData = new Food(data);
