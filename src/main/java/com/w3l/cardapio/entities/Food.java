@@ -1,5 +1,6 @@
-package com.w3l.cardapio.food;
+package com.w3l.cardapio.entities;
 
+import com.w3l.cardapio.dto.FoodRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

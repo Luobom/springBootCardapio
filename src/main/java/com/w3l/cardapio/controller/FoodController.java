@@ -1,9 +1,9 @@
-package com.w3l.cardapio.controler;
+package com.w3l.cardapio.controller;
 
-import com.w3l.cardapio.food.Food;
-import com.w3l.cardapio.food.FoodRequestDTO;
-import com.w3l.cardapio.food.FoodResponseDTO;
-import com.w3l.cardapio.repository.FoodRepository;
+import com.w3l.cardapio.entities.Food;
+import com.w3l.cardapio.dto.FoodRequestDTO;
+import com.w3l.cardapio.dto.FoodResponseDTO;
+import com.w3l.cardapio.repositories.FoodRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
